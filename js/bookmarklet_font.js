@@ -1,4 +1,4 @@
-console.log('Loaded Background changing bookmarklet!!!');
+console.log('Loaded font changing bookmarklet!!!');
 
 
 javascript:(function(){
@@ -31,18 +31,14 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
+        var p=document.getElementsByTagName('*');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=12;}s+=2;p[i].style.fontSize=s+"px"}
 
-        
-var p=document.getElementsByTagName('*');
-for(i=0;i<p.length;i++){
-    if(p[i]}.style.fontSize){
-        var s=partseInt(p[i].style.fontSize.replace("px",""));
-    } else {
-        var s=12;} s+=2;p[i].style.fontSize=s+"px"}
-    });
-
-//YOUR CODE ENDS HERE!
-
+        //YOUR CODE GOES HERE!
     })();
 
 }
