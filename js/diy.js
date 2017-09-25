@@ -28,6 +28,18 @@ document.getElementsByTagName("head")[0].appendChild(script);
     initMyBookmarklet();
 }
 
+function initMyBookmarklet(){
+    (window.myBookmarklet = function (){
+      
+      var ds = document.getElementsByTagName('div');
+      var d = ds[Math.round(Math.random()*ds.length)];
+      function rotateHeaders(r) {
+        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
+        setTimeout(function() {rotateHeaders(++r % 360);}, 100);
+      }
+      rotateHeaders(1);
+
+
 
 
 function initMyBookmarklet(){
