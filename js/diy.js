@@ -30,14 +30,6 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
-      
-      var ds = document.getElementsByTagName('div');
-      var d = ds[Math.round(Math.random()*ds.length)];
-      function rotateHeaders(r) {
-        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
-        setTimeout(function() {rotateHeaders(++r % 360);}, 100);
-      }
-      rotateHeaders(1);
       var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
@@ -45,6 +37,14 @@ function initMyBookmarklet(){
             } else {
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}；
 
+      var ds = document.getElementsByTagName('div');
+      var d = ds[Math.round(Math.random()*ds.length)];
+      function rotateHeaders(r) {
+        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
+        setTimeout(function() {rotateHeaders(++r % 360);}, 100);
+      }
+      rotateHeaders(1);
+      
       })();
 
 
