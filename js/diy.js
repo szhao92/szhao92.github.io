@@ -38,8 +38,7 @@ function initMyBookmarklet(){
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
       }
       rotateHeaders(1);
-    })();
+      })();
 
-  }
-  })();
-
+    }
+})();
