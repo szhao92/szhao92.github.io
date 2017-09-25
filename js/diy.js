@@ -37,20 +37,9 @@ function initMyBookmarklet(){
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
       }
-      rotateHeaders(1)
+      rotateHeaders(1);
 
 
-
-      })();
-
-
-
-    }
-
-function initMyBookmarklet(){
-    (window.myBookmarklet = function (){
-
-        //YOUR CODE GOES HERE!
         var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
