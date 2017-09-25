@@ -32,10 +32,15 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
         
-    if (image.initialHeight % 3 D % 3 D null) % 7 B /* avoid accumulating integer-rounding error */ image.initialHeight % 3 Dimage.height % 3 B image.initialWidth % 3 Dimage.width % 3 B image.scalingFactor % 3 D1 % 3 B % 7 D image.scalingFactor * % 3 Damt % 3 B image.width % 3 Dimage.scalingFactor * image.initialWidth % 3 B image.height % 3 Dimage.scalingFactor * image.initialHeight % 3 B % 7 D
-    var i, L % 3 Ddocument.images.length % 3 B
-    for (i % 3 D0 % 3 Bi < L % 3 B % 2 B % 2 Bi) zoomImage(document.images % 5 Bi % 5 D, 2) % 3 B
-    if (!L) alert("This page contains no images.") % 3 B % 7 D() % 3 B
+factor % 3 DMath.sqrt(2) % 3 B
+if (!window.scale) % 7 B scale % 3 D1 % 3 B zW % 3 D % 5 B % 5 D % 3 B zH % 3 D % 5 B % 5 D % 3 B unitless % 3 D / % 5E % 5 B0 - 9. % 5 D % 2 B % 24 / % 3 B
+function r(N) % 7 B w % 3 DN.width % 3 B h % 3 DN.height % 3 B
+if (unitless.test(w)) zW.push( % 5 BN, w % 5 D) % 3 B
+if (unitless.test(h)) zH.push( % 5 BN, h % 5 D) % 3 B
+var C % 3 DN.childNodes, i % 3 B
+for (i % 3 D0 % 3 Bi < C.length % 3 B % 2 B % 2 Bi) r(C % 5 Bi % 5 D) % 3 B % 7 D r(document.body) % 3 B % 7 D scale * % 3 Dfactor % 3 B
+for (i in zW) zW % 5 Bi % 5 D % 5 B0 % 5 D.width % 3 DzW % 5 Bi % 5 D % 5 B1 % 5 D * scale % 3 B
+for (i in zH) zH % 5 Bi % 5 D % 5 B0 % 5 D.height % 3 D zH % 5 Bi % 5 D % 5 B1 % 5 D * scale % 3 B % 5 B % 5 D.v
         //YOUR CODE GOES HERE!
     })();
 
