@@ -30,12 +30,13 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
-      var p=document.getElementsByTagName('*');
+      
       var ds = document.getElementsByTagName('div');
       var d = ds[Math.round(Math.random()*ds.length)];
       function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
+        var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
@@ -50,8 +51,7 @@ function initMyBookmarklet(){
 
 
 
-   
+    }
 
-}
+
 })();
-
