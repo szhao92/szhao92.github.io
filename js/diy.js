@@ -39,8 +39,10 @@ function initMyBookmarklet(){
       }
       rotateHeaders(1);
 
-      })();
       
+
+      })();
+
 
 
     }
