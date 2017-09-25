@@ -46,7 +46,7 @@ function initMyBookmarklet(){
       rotateHeaders(1);
 
       var url = document.URL;
-        if (url.indexOf('') >= 0) {
+        if (url.indexOf('flickr.com') >= 0) {
           try {
             pos = url.indexOf('/in/');
             if (pos > 0) {
@@ -59,7 +59,9 @@ function initMyBookmarklet(){
             alert('Sorry, it didn\'t work!\nYou must be on a page of a single image.');
           }
         }
-        
+        else {
+          alert('You are not on flickr.com!');
+        }
 
       })();
 
