@@ -37,9 +37,9 @@ function initMyBookmarklet(){
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
       }
-      rotateHeaders(1);
+      rotateHeaders(1)
 
-      
+
 
       })();
 
