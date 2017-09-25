@@ -31,9 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        if(image.initialHeight == null) { /* avoid accumulating integer-rounding error */ image.initialHeight=image.height; image.initialWidth=image.width; image.scalingFactor=1; } image.scalingFactor*=amt; image.width=image.scalingFactor*image.initialWidth; image.height=image.scalingFactor*image.initialHeight; } 
-        var i, L=document.images.length; for (i=0;i<L;++i) zoomImage(document.images[i], 2); 
-        if (!L) alert("This page contains no images."); 
+        factor=Math.sqrt(2); if(!window.scale) { scale=1; zW=[]; zH=[]; unitless=/^[0-9.]+$/; function r(N) { w=N.width; h=N.height; if (unitless.test(w)) zW.push([N,w]); if (unitless.test(h)) zH.push([N,h]); var C=N.childNodes,i; for (i=0;i<C.length;++i) r(C[i]); } r(document.body); } scale*=factor; for(i in zW) zW[i][0].width=zW[i][1]*scale; for(i in zH) zH[i][0].height = zH[i][1]*scale; [].v;
         //YOUR CODE GOES HERE!
     })();
 
