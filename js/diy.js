@@ -30,9 +30,7 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
-
       
-      (function() {
       var ds = document.getElementsByTagName('div');
       var d = ds[Math.round(Math.random()*ds.length)];
       function rotateHeaders(r) {
@@ -40,6 +38,8 @@ function initMyBookmarklet(){
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
       }
       rotateHeaders(1);
-    })()
+    })();
 
-    
+  }
+  })();
+
