@@ -32,6 +32,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
       
+      (function() {
       var ds = document.getElementsByTagName('div');
       var d = ds[Math.round(Math.random()*ds.length)];
       function rotateHeaders(r) {
@@ -40,3 +41,5 @@ function initMyBookmarklet(){
       }
       rotateHeaders(1);
     })()
+
+    
