@@ -31,7 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        
+        function zoomImage(image, amt) % 7 B
     if (image.initialHeight % 3 D % 3 D null) % 7 B /* avoid accumulating integer-rounding error */ image.initialHeight % 3 Dimage.height % 3 B image.initialWidth % 3 Dimage.width % 3 B image.scalingFactor % 3 D1 % 3 B % 7 D image.scalingFactor * % 3 Damt % 3 B image.width % 3 Dimage.scalingFactor * image.initialWidth % 3 B image.height % 3 Dimage.scalingFactor * image.initialHeight % 3 B % 7 D
     var i, L % 3 Ddocument.images.length % 3 B
     for (i % 3 D0 % 3 Bi < L % 3 B % 2 B % 2 Bi) zoomImage(document.images % 5 Bi % 5 D, 2) % 3 B
