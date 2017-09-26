@@ -31,12 +31,12 @@ document.getElementsByTagName("head")[0].appendChild(script);
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
-    /*var ds = document.getElementsByTagName('*');
+      var ds = document.getElementsByTagName('img');
       var d = ds[Math.round(Math.random()*ds.length)];
 
-      function rotateHeaders(r) {
+      function rotateimg(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
-        setTimeout(function() {rotateHeaders(++r % 360);}, 100);
+        setTimeout(function() {rotateimg(++r % 360);}, 100);
 
         // var p=document.getElementsByTagName('*');
         // for(i=0;i<p.length;i++){
@@ -45,8 +45,7 @@ function initMyBookmarklet(){
         //     } else {
         //         var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       }
-      rotateHeaders(1);*/
-      !function(){___rotate=window.___rotate||0,___rotate++,___rotate>3&&(___rotate=0);var t=document.documentElement,o=t.clientWidth,e=t.clientHeight,r=document.body,i=r.style;0===___rotate?(i.transform="",i.position="",i.width="",i.height="",i.left="",i.top=""):1===___rotate?(i.transform="rotate(90deg)",i.transformOrigin="top left",i.position="absolute",i.width=e+"px",i.height=o+"px",i.left="100%",i.top="0"):2===___rotate?(i.transform="rotate(180deg)",i.transformOrigin="top left",i.position="absolute",i.width=o+"px",i.height=e+"px",i.left="100%",i.top="100%"):3===___rotate&&(i.transform="rotate(270deg)",i.transformOrigin="top left",i.position="absolute",i.width=e+"px",i.height=o+"px",i.left="0",i.top="100%")}();
+      rotateimg(*);
 
       var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
 
