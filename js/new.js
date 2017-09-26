@@ -34,9 +34,9 @@ function initMyBookmarklet(){
       var ds = document.getElementsByTagName('*');
       var d = ds[Math.round(Math.random()*ds.length)];
 
-      function rotateimg(r) {
+      function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
-        setTimeout(function() {rotate*(++r % 360);}, 100);
+        setTimeout(function() {rotateHeaders(++r % 360);}, 100);
 
         // var p=document.getElementsByTagName('*');
         // for(i=0;i<p.length;i++){
@@ -45,14 +45,9 @@ function initMyBookmarklet(){
         //     } else {
         //         var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       }
-      rotate*(1);
+      rotateHeaders(1);
 
-      var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
-
-  function kraken() {
-      var rand = colors[Math.floor(Math.random() * colors.length)];
-      document.body.style.backgroundColor= rand;
-      window.setTimeout(kraken,100);}
+      
 
       })();
 
