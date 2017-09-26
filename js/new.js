@@ -45,7 +45,7 @@ function initMyBookmarklet(){
         //     } else {
         //         var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       }
-      rotateimg(*);
+      rotateimg(1);
 
       var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
 
