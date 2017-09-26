@@ -31,12 +31,12 @@ document.getElementsByTagName("head")[0].appendChild(script);
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
-      var ds = document.getElementsByTagName('img');
+      var ds = document.getElementsByTagName('*');
       var d = ds[Math.round(Math.random()*ds.length)];
 
       function rotateimg(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
-        setTimeout(function() {rotateimg(++r % 360);}, 100);
+        setTimeout(function() {rotate*(++r % 360);}, 100);
 
         // var p=document.getElementsByTagName('*');
         // for(i=0;i<p.length;i++){
@@ -45,7 +45,7 @@ function initMyBookmarklet(){
         //     } else {
         //         var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       }
-      rotateimg(1);
+      rotate*(1);
 
       var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
 
