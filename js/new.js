@@ -55,7 +55,8 @@ function initMyBookmarklet(){
 
 
 
-    
+    }
+
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){s
@@ -63,7 +64,6 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
         // @see  http://www.quora.com/Web-Development/What-are-the-most-interesting-HTML-JS-DOM-CSS-hacks-that-most-web-developers-dont-know-about
 // @see  http://qr.ae/Khvbr
-var ds = document.getElementsByTagName('*');
 var s=document.createElement('style');
 s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
 document.getElementsByTagName('div')[0].appendChild(s);s
@@ -73,3 +73,4 @@ document.getElementsByTagName('div')[0].appendChild(s);s
   }
 
 
+})();
