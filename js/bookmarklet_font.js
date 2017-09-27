@@ -31,11 +31,11 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        var p=document.getElementsByTagName('backgroundColor');
+        var p=document.getElementsByTagName('div');
 
         var s=document.createElement('style');
 s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
-document.getElementsByTagName('head')[0].appendChild(s);
+document.getElementsByTagName('divs')[0].appendChild(s);
 
         //YOUR CODE GOES HERE!
     })();
