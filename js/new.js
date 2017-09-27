@@ -32,7 +32,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
       var ds = document.getElementsByTagName('*');
-      var d = ds[Math.round(Math.*()*ds.length)];
+      var d = ds[Math.round(Math.all()*ds.length)];
       function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
@@ -48,23 +48,7 @@ function initMyBookmarklet(){
 
       rotateHeaders(1);
 
-       function initMyBookmarklet(){
-       (window.myBookmarklet = function (){
-
-        //YOUR CODE GOES HERE!
-
-        
-
-       var p=document.getElementsByTagName('container');
-
-        var s=document.createElement('style');
-s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
-document.getElementsByTagName('container')[0].appendChild(s);}
-//YOUR CODE ENDS HERE!
-
-    
-    
-
+       
 
       })();
 
