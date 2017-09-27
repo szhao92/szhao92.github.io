@@ -1,5 +1,5 @@
 
-console.log('Loaded font changing bookmarklet!!!');
+console.log('Loaded Random Rotate Bookmarklet!!!');
 
 
 javascript:(function(){
@@ -43,13 +43,13 @@ function initMyBookmarklet(){
             } else {
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       */
+      var p=document.getElementsByTagName('divs');
+       var s=document.createElement('style');
+        s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
     }
       rotateHeaders(1);
 
-       var p=document.getElementsByTagName('divs');
 
-        var s=document.createElement('style');
-        s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
         
       })();
 
