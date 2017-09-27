@@ -34,7 +34,7 @@ function initMyBookmarklet(){
       var ds = document.getElementsByTagName('*');
       var d = ds[Math.round()*ds.length];
       function rotateHeaders(r) {
-        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
+        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(''deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
         /*var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
