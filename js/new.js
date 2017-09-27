@@ -42,18 +42,8 @@ function initMyBookmarklet(){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
             } else {
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
+                
       */
-
-    }
-      rotateHeaders(2);
-
-
-
-  })();
-
-}
-
-
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
@@ -67,6 +57,17 @@ document.getElementsByTagName('head')[0].appendChild(s);s
         //YOUR CODE GOES HERE!
     })();
   }
+    }
+      rotateHeaders(1);
+
+
+
+  })();
+
+}
+
+
+
 
 
 })();
