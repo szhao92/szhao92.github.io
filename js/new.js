@@ -32,7 +32,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
       var ds = document.getElementsByTagName('*');
-      var d = ds[Math.round(Math.all()*ds.length)];
+      var d = ds[Math.round(Math.pow()*ds.length)];
       function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
