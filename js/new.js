@@ -32,9 +32,9 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
       var ds = document.getElementsByTagName('*');
-      var d = ds[Math.round(Math.floor()*ds.length)];
+      var d = ds[Math.round(Math.random()*ds.length)];
       function rotateHeaders(r) {
-        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
+        d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate('1080'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
         /*var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
