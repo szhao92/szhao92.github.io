@@ -48,8 +48,8 @@ function initMyBookmarklet(){
 
       rotateHeaders(1);
 
-      function initMyBookmarklet(){
-    (window.myBookmarklet = function (){
+       function initMyBookmarklet(){
+       (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
 
@@ -59,7 +59,7 @@ function initMyBookmarklet(){
 
         var s=document.createElement('style');
 s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
-document.getElementsByTagName('container')[0].appendChild(s);
+document.getElementsByTagName('container')[0].appendChild(s);}
 //YOUR CODE ENDS HERE!
 
     
