@@ -55,8 +55,7 @@ function initMyBookmarklet(){
 
 
 
-    }
-
+    
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){s
@@ -74,4 +73,3 @@ document.getElementsByTagName('div')[0].appendChild(s);s
   }
 
 
-})();
