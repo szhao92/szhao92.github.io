@@ -34,7 +34,7 @@ function initMyBookmarklet(){
         var p=document.getElementsByTagName('div');
 
         var s=document.createElement('style');
-s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";}
+s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
 
         //YOUR CODE GOES HERE!
     })();
