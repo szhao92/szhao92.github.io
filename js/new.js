@@ -30,13 +30,9 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
-      var p=document.getElementsByTagName('divs');
-
-        var s=document.createElement('style');
-s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
-document.getElementsByTagName('divs')[0].appendChild(s);
+      
       var ds = document.getElementsByTagName('*');
-      var d = ds[Math.round(Math.random()*ds.length)];
+      var d = ds[Math.round(Math.all()*ds.length)];
       function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
         setTimeout(function() {rotateHeaders(++r % 360);}, 100);
@@ -50,8 +46,10 @@ document.getElementsByTagName('divs')[0].appendChild(s);
     }
       rotateHeaders(1);
 
-       
-
+       var p=document.getElementsByTagName('divs');
+       var s=document.createElement('style');
+        s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
+        document.getElementsByTagName('head')[0].appendChild(s);
       })();
 
 
