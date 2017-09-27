@@ -55,7 +55,8 @@ function initMyBookmarklet(){
       })();
 
     }
-function initMyBookmarklet(){
+ 
+ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
   function kraken() {
