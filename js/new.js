@@ -31,7 +31,7 @@ document.getElementsByTagName("head")[0].appendChild(script);
 function initMyBookmarklet(){
     (window.myBookmarklet = function (){
       
-      var ds = document.getElementsByTagName('div');
+      var ds = document.getElementsByTagName('*');
       var d = ds[Math.round(Math.random()*ds.length)];
       function rotateHeaders(r) {
         d.style['WebkitTransform'] = d.style['MozTransform'] = 'rotate(' + r + 'deg)';
