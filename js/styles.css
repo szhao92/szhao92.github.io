@@ -1,0 +1,32 @@
+
+body{
+	 margin-left: 50px;
+	 margin-top: 300px;
+}
+
+h2{
+	text-align: left;
+	font-family: 'Mukta', sans-serif;
+	font-weight:medium;
+
+
+}
+
+p{
+	   width: 350px;
+	   text-align: left;
+	   color:black;
+	   font-family: 'Mukta', sans-serif;
+	       letter-spacing:.2px;
+
+}
+#link{
+	   text-align: left;
+	   color:black;
+	   font-family: 'Mukta', sans-serif;
+}
+
+video{
+
+	   margin-left: -10px;
+}
