@@ -44,13 +44,27 @@ function initMyBookmarklet(){
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
       */
     }
+
+
       rotateHeaders(1);
+
+      function initMyBookmarklet(){
+    (window.myBookmarklet = function (){
+
+        //YOUR CODE GOES HERE!
+
+        
 
        var p=document.getElementsByTagName('container');
 
         var s=document.createElement('style');
 s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
 document.getElementsByTagName('container')[0].appendChild(s);
+//YOUR CODE ENDS HERE!
+
+    
+    
+
 
       })();
 
