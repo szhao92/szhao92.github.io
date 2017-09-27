@@ -31,10 +31,13 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        var p=document.getElementsByTagName('div');
+        var p=document.getElementsByTagName('backgroundColor');
 
-        var s=document.createElement('style');
-s.textContent = "<style> * { background-color: rgba(255,0,0,.2) !important} * * { background-color: rgba(0,255,0,.2) !important} * * * { background-color: rgba(0,0,255,.2) !important} * * * * { background-color: rgba(255,0,255,.2) !important} * * * * * { background-color: rgba(0,255,255,.2) !important} * * * * * * { background-color: rgba(255,255,0,.2) !important}</style>";
+        var colors = ["#FFE90A", "#30FF91", "#A9F4F9", "#DDA9F9", "#FF00E0", "#FF6CB1"];
+  function kraken() {
+      var rand = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor= rand;
+      window.setTimeout(kraken,100);}
 
         //YOUR CODE GOES HERE!
     })();
