@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/catmain.css" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet"/>
+</head>
+<style type="text/css">
+
+    
+  body{
+ font-family: 'Source Sans Pro', 
+ sans-serif; 
+ color: black;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-color:black;
+    }
+
+  .container{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    margin: 0px;
+    padding: 0px;
+    
+    align-content: 0px;
+    margin-left:-10.5%;
+    margin-top:-5%;
+    
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:0;
+    cursor:pointer;
+
+  }
+             
+                  
+  
+                  
+  #frame1{
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:88%;
+    width:94%;
+    top:5%;
+    left:22.5%;
+    cursor:pointer;
+   transform: rotate(120deg);
+   -webkit-animation: spin 120s linear infinite; 
+      animation: spin 120s linear infinite;
+      -webkit-animation-delay: 30s; /* Safari 4.0 - 8.0 */
+    animation-delay: 30s;
+    
+
+    
+  }
+#frame1 video {
+  position:absolute;
+  top:20px;
+  left: 0;
+  width:120%;
+  height:120%;
+  pointer-events: none;
+   
+  
+  
+}
+.spinEffect {
+  -webkit-animation: spin 12s linear infinite; 
+      animation: spin 12s linear infinite;
+}@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}
+ 
+
+</style>
+
+<body>
+    
+   <div class="container">
+      <div id="frame1">
+         <video src="2.mp4"  autoplay loop></video>
+        <div id="frame1">
+           <video src="2.mp4"  autoplay loop></video>
+          <div id="frame1">
+             <video src="2.mp4"  autoplay loop></video>
+            <div id="frame1">
+               <video src="2.mp4"  autoplay loop></video>
+              <div id="frame1">
+                 <video src="2.mp4"  autoplay loop></video>
+                <div id="frame1">
+                   <video src="2.mp4"  autoplay loop></video>
+                  <div id="frame1">
+                     <video src="2.mp4"  autoplay loop></video>
+                    <div id="frame1">
+                      <video src="2.mp4"  autoplay loop></video>
+                      <div id="frame1">
+                        <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                         <div id="frame1">
+                         <video src="2.mp4"  autoplay loop></video>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+          
+          </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script>
+        
+     	/* window.onload = function(){
+                var bsDiv = document.getElementById("frame1");
+                var x, y;
+
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+                window.addEventListener('mousemove', function(event){
+                    x = event.clientX;
+                    y = event.clientY;                    
+                    if ( typeof x !== 'undefined' ){
+                        bsDiv.style.left = x + "px";
+                        bsDiv.style.top = y + "px";
+                    }
+                }, false);
+            }*/
+$(function(){
+  $(".container").click(function(){
+    /*//Animação com loop infinito (até clicar)
+    $("#d2").toggleClass("rotating");*/
+    $("video").toggleClass("spinEffect");
+  });
+});
+     </script>
+
+
+</body>
+</html>
